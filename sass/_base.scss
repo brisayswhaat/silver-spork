@@ -1,13 +1,55 @@
 body {
   background-color: teal;
-  width: 100%;
-  height: 100%;
 }
 
 .wrapper {
   @include span-columns(12 of 12);
-  max-width: 1900px;
-  margin: 0 auto;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto !important;
+}
+
+.slider-container {
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, .7);
+}
+
+.item {
+  @include size(100% 500px);
+  @include display(flex);
+  @include flex-direction(row);
+}
+
+.slider-image {
+  @include display(flex);
+  @include span-columns(6 of 12);
+  background-size: cover;
+  background-color: lightgray;
+}
+
+.slider-copy {
+  @include span-columns(6 of 12);
+  background-color: orange;
+  height: 100%;
+  font-family: 'Gotham';
+  color: gray;
+  font-size: 15px;
+  padding: 50px;
+}
+
+.nav-row {
+  @include span-columns(6 of 12);
+  @include shift(6);
+  padding: 50px;
   position: relative;
-  top: 0;
+  display: inline-block;
+  float: right;
+  margin-top: -250px;
+  z-index: 999;
+
+  a {
+    padding: 10px 15px;
+    background-color: yellow;
+      z-index: 999;
+  }
 }
