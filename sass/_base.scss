@@ -1,0 +1,13 @@
+body {
+  background-color: teal;
+  width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  @include span-columns(12 of 12);
+  max-width: 1900px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+}
