@@ -1,6 +1,96 @@
-@import url("/bower_components/normalize-scss/sass/normalize.scss");
-@import url("/bower_components/bourbon/app/assets/stylesheets/bourbon.scss");
-@import url("/bower_components/neat/app/assets/stylesheets/neat.scss");
-@import url("sass/_base.scss");
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+body {
+  background-color: teal; }
+
+.wrapper {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  max-width: 1800px;
+  width: 100%;
+  margin: 0 auto !important; }
+  .wrapper:last-child {
+    margin-right: 0; }
+
+.slider-container {
+  background-color: white;
+  border: 1px solid rgba(255, 255, 255, 0.7); }
+
+.item {
+  height: 500px;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-direction: row; }
+
+.slider-image {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-size: cover;
+  background-color: lightgray; }
+  .slider-image:last-child {
+    margin-right: 0; }
+
+.slider-copy {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  background-color: orange;
+  height: 100%;
+  font-family: 'Gotham';
+  color: gray;
+  font-size: 15px;
+  padding: 50px; }
+  .slider-copy:last-child {
+    margin-right: 0; }
+
+.nav-row {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: 51.17883%;
+  padding: 50px;
+  position: relative;
+  display: inline-block;
+  float: right;
+  margin-top: -250px;
+  z-index: 999; }
+  .nav-row:last-child {
+    margin-right: 0; }
+  .nav-row a {
+    padding: 10px 15px;
+    background-color: yellow;
+    z-index: 999; }
 
 /*# sourceMappingURL=style.css.map */
